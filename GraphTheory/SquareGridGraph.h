@@ -15,9 +15,9 @@ public:
 public:
 	SquareGridGraph() = default;
 	SquareGridGraph(size_t horizontalSize, size_t verticalSize)
-		: m_verticalSize(verticalSize)
-		, m_horizontalSize(horizontalSize)
 	{
+		setHorizontalSize(horizontalSize);
+		setVerticalSize(verticalSize);
 		buildGrid();
 		connectGrid();
 	}
